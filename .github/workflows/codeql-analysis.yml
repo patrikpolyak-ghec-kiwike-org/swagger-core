@@ -45,6 +45,9 @@ jobs:
       with:
         languages: java
 
+    - name: Early exit
+      run: exit 1
+
     - name: Cache local Maven repository
       uses: actions/cache@v2
       with:
